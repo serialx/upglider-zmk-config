@@ -13,32 +13,28 @@
         compatible = "zmk,keymap";
 
         default_layer {
-// -------------------
-// | 7      |  8  |  9  |
-// | 4      |  5  |  6  |
-// | 1      |  2  |  3  |
-// | MO(1)  |  0  |  .  |
+//    KC_ESC,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,  KC_BSLS, KC_GRV,  LAYER_1,
+//    KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC, KC_BSPC,          KC_DEL,
+//    KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_ENT,                    KC_PGUP,
+//    KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_LSFT,                   KC_UP,   KC_PGDN,
+//    KC_LCTL, KC_LALT, KC_LGUI, KC_SPC,                                               KC_RGUI, KC_LALT, KC_LCTL,          KC_LEFT, KC_DOWN, KC_RGHT)};
 // ----------------------
             bindings = <
-    &kp N7 &kp N8 &kp N9
-    &kp N4 &kp N5 &kp N6
-    &kp N1 &kp N2 &kp N3
-    &mo 1  &kp N0 &kp DOT
+    &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS &kp EQL &kp BSLH &kp GRAVE &mo 1
+    &kp TAB &none &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LBKT &kp RBKT &kp BSPC &kp DEL
+    &kp LCTL &none &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMI &kp SQT &kp ENTER &none &kp PG_UP
+    &none &kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &none &kp RSHFT &kp UP &kp PG_DN
+    &kp LCTRL &kp LALT &none &kp LGUI &none &none &kp SPACE &none &none &none &kp RGUI &kp RALT &kp RCTRL &kp LEFT &kp DOWN &kp RIGHT
             >;
         };
 
         nav_layer {
-// -----------------------
-// | BTNXT |  HOME  |  PGUP  |
-// | BTPRV |  END   |  PGDN  |
-// | BTCLR |  _     |  _     |
-// | _     |  _     |  RET   |
-// -----------------------
             bindings = <
-    &bt BT_NXT &kp HOME &kp PG_UP
-    &bt BT_PRV &kp END  &kp PG_DN
-    &bt BT_CLR &trans   &trans
-    &trans     &trans   &kp RET
+    &trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans &trans &trans
+    &trans &trans &trans &trans &trans &reset &trans &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR &trans &trans &trans &trans 
+    &trans &trans &trans &trans &bootloader &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
+    &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans 
             >;
         };
     };

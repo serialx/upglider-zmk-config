@@ -1,0 +1,15 @@
+identifier: adafruit_feather_nrf52840_zmk
+name: Adafruit Feather nRF52840 Express ZMK
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - usb_device
+  - ble
+  - ieee802154
+  - pwm
+  - watchdog

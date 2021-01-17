@@ -9,30 +9,30 @@
         diode-direction = "col2row";
 
         col-gpios
-            = <&feather_header 16 GPIO_ACTIVE_HIGH>
-            , <&feather_header 17 GPIO_ACTIVE_HIGH>
-            , <&feather_header 18 GPIO_ACTIVE_HIGH>
-            , <&feather_header 19 GPIO_ACTIVE_HIGH>
-            , <&feather_header 20 GPIO_ACTIVE_HIGH>
+            = <&feather_header 7 GPIO_ACTIVE_HIGH>
+            , <&feather_header 8 GPIO_ACTIVE_HIGH>
+            , <&feather_header 9 GPIO_ACTIVE_HIGH>
+            , <&feather_header 10 GPIO_ACTIVE_HIGH>
+            , <&feather_header 11 GPIO_ACTIVE_HIGH>
+            , <&feather_header 15 GPIO_ACTIVE_HIGH>
+            , <&feather_header 14 GPIO_ACTIVE_HIGH>
+            , <&feather_header 13 GPIO_ACTIVE_HIGH>
+            , <&feather_header 12 GPIO_ACTIVE_HIGH>
+            , <&feather_header 2 GPIO_ACTIVE_HIGH>
+            , <&feather_header 1 GPIO_ACTIVE_HIGH>
+            , <&feather_header 0 GPIO_ACTIVE_HIGH>
+            , <&feather_header 6 GPIO_ACTIVE_HIGH>
+            , <&feather_header 5 GPIO_ACTIVE_HIGH>
+            , <&feather_header 4 GPIO_ACTIVE_HIGH>
+            , <&feather_header 3 GPIO_ACTIVE_HIGH>
             ;
 
         row-gpios
-            = <&feather_header 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&feather_header 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&feather_header 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&feather_header 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&feather_header 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&feather_header 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&feather_header 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
 };

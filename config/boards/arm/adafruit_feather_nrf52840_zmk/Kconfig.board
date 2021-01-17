@@ -1,0 +1,8 @@
+# Adafruit Feather nRF52840 Express board configuration
+
+# Copyright (c) 2020 Tobias Svehagen
+# SPDX-License-Identifier: Apache-2.0
+
+config BOARD_ADAFRUIT_FEATHER_NRF52840_ZMK
+	bool "Adafruit Feather nRF52840 Express ZMK"
+	depends on SOC_NRF52840_QIAA
