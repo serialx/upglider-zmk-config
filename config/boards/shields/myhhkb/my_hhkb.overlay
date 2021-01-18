@@ -7,7 +7,7 @@
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "col2row";
-        debounce-period = 8;
+        debounce-period = "8";
 
         col-gpios
             = <&feather_header 7 GPIO_ACTIVE_HIGH>
