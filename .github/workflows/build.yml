@@ -33,17 +33,17 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (My HHKB)
-        run: west build -s zmk/app -b adafruit_feather_nrf52840_zmk -- -DSHIELD=my_hhkb -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: My HHKB DTS File
+      - name: West Build (Upglider)
+        run: west build -s zmk/app -b adafruit_feather_nrf52840_zmk -- -DSHIELD=upglider -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Upglider DTS File
         if: ${{ always() }}
         run: cat -n build/zephyr/adafruit_feather_nrf52840_zmk.dts.pre.tmp
-      - name: My HHKB Kconfig file
+      - name: Upglider Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 my_hhkb_adafruit_feather_nrf52840_zmk.uf2
-      - name: Archive (My HHKB)
+        run: cp build/zephyr/zmk.uf2 upglider_adafruit_feather_nrf52840_zmk.uf2
+      - name: Archive (Upglider)
         uses: actions/upload-artifact@v2
         with:
           name: firmware
-          path: my_hhkb_adafruit_feather_nrf52840_zmk.uf2
+          path: upglider_adafruit_feather_nrf52840_zmk.uf2
