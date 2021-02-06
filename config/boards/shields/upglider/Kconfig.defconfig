@@ -1,0 +1,6 @@
+if SHIELD_UPGLIDER
+
+config ZMK_KEYBOARD_NAME
+    default "Upglider MK I"
+
+endif

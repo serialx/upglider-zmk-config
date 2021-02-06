@@ -1,6 +1,0 @@
-if SHIELD_MY_HHKB
-
-config ZMK_KEYBOARD_NAME
-    default "My HHKB"
-
-endif
