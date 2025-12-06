@@ -1,0 +1,4 @@
+---
+include:
+  - board: adafruit_feather_nrf52840_zmk
+    shield: upglider
